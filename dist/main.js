@@ -1,4 +1,5 @@
-import { Point } from "./point.ts";
+"use strict";
+// import { Point } from "./point"
 // export {}
 // function dosomething() {
 //     for(let i=0; i<5 ; i++) {
@@ -76,5 +77,58 @@ import { Point } from "./point.ts";
 // let X = point.X;
 // point.X=10;
 // point.draw()
-let point = new Point(1, 2);
-point.draw();
+// let point: Point = new Point(1,2);
+// point.draw()
+//  export{}
+// new lines
+// let id: number = 5
+// console.log("ID: " , id)
+//  basic types
+let id = 5;
+let company = "hamza pvt ltd";
+let isPublished = true;
+let x = "hello";
+x = true;
+let ids = [1, 2, 3, 4];
+let arr = [1, true, "hello"];
+// tuple
+let person = [1, "brad", true];
+// tuple arry
+let employee;
+employee = [
+    [1, "brad"],
+    [2, "jhon"],
+    [3, "harry"],
+];
+// union
+let pid;
+pid = "22";
+//  Enum
+var Direction1;
+(function (Direction1) {
+    Direction1[Direction1["Up"] = 1] = "Up";
+    Direction1[Direction1["Down"] = 2] = "Down";
+    Direction1[Direction1["Left"] = 3] = "Left";
+    Direction1[Direction1["Right"] = 4] = "Right";
+})(Direction1 || (Direction1 = {}));
+var Direction2;
+(function (Direction2) {
+    Direction2["Up"] = "Up";
+    Direction2["Down"] = "Down";
+    Direction2["Left"] = "Left";
+    Direction2["Right"] = "Right";
+})(Direction2 || (Direction2 = {}));
+console.log(Direction2.Up);
+// Objects
+const user = {
+    id: 1,
+    name: "jhon"
+};
+const User = {
+    id: 1,
+    name: "jhon"
+};
+// type Assertion
+let cid = 1;
+// let customerId = <number> cid
+let customerId = cid;
